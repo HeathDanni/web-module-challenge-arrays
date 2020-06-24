@@ -7,7 +7,7 @@ var originalFlavors = ["Banana Nut Fudge",
     "Chocolate Almond",
     "Chocolate Chip",
     "Chocolate Fudge",
-    "Chocolate Mint",
+    "Chocolate Mint", 20
     "Chocolate Ribbon",
     "Coffee",
     "Coffee Candy",
@@ -180,12 +180,8 @@ and should return the average number of words per item in the array.
 For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
 
 // function getAverageWordLength(arr){
-//   let number = 0;
-//   let average = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//       arr[0].split(" ");
-//       number += arr[0].length;
-//     } return number;
+//      let words = arr.toString().replace(/\s/g, ",").split(",");
+//      return words.length/arr.length;
 // }
 // console.log(getAverageWordLength(originalFlavors));
 
@@ -270,17 +266,17 @@ var regionalFlavors = ["Pink Bubblegum",
     "Chocolate Chocolate Chip Cheesecake",
     "Caramel 'n' Cookies"]
 
-function getRandomFlavors(arr0, arr1, arr2, arr3) {
-   let allArrays = arr0.concat(arr1).concat(arr2).concat(arr3);
-   let randomFlavors = []; 
+// function getRandomFlavors(arr0, arr1, arr2, arr3) {
+//    let allArrays = arr0.concat(arr1).concat(arr2).concat(arr3);
+//    let randomFlavors = []; 
 
-   for (let i = 0; i < 31; i++) {
-      let randomNum = Math.floor(Math.random() * allArrays.length) - 1;
+//    for (let i = 0; i < 31; i++) {
+//       let randomNum = Math.floor(Math.random() * allArrays.length) - 1;
 
-      randomFlavors.push(allArrays[randomNum]);
-   }
-    return randomFlavors;
-  }
+//       randomFlavors.push(allArrays[randomNum]);
+//    }
+//     return randomFlavors;
+//   }
 
 
-console.log(getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors));
+// console.log(getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors));
