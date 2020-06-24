@@ -127,6 +127,11 @@ Your function should accept:
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
+// let newArray = [...originalFlavors];
+
+// console.log(newArray);
+
+
 // function copy(arr, name){
 //   name = [];
 //     for (let i = 0; i < arr.length; i++) {
@@ -134,7 +139,7 @@ and should return a new array that is identical to the old array. You can name t
 //     }
 //     return name;
 // }
-// console.log(copy(originalFlavors, );
+// console.log(copy(originalFlavors, newArray);
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll around.
 
@@ -151,16 +156,16 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(arr, string){
-  let filteredArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].includes(string)) {
-      filteredArray.push(arr[i]);
-    } 
-  } return filteredArray;
-}
+// function filterByWord(arr, string){
+//   let filteredArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].includes(string)) {
+//       filteredArray.push(arr[i]);
+//     } 
+//   } return filteredArray;
+// }
 
-console.log(filterByWord(originalFlavors, "Chocolate"));
+// console.log(filterByWord(originalFlavors, "Chocolate"));
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
 
@@ -174,12 +179,15 @@ and should return the average number of words per item in the array.
 
 For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
 
-function getAverageWordLength(/*code here*/){
-
-    /*code here*/
-
-}
-
+// function getAverageWordLength(arr){
+//   let number = 0;
+//   let average = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//       arr[0].split(" ");
+//       number += arr[0].length;
+//     } return number;
+// }
+// console.log(getAverageWordLength(originalFlavors));
 
 /* STRETCH 2: Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors.
 
