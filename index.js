@@ -274,16 +274,13 @@ function getRandomFlavors(arr0, arr1, arr2, arr3) {
    let allArrays = arr0.concat(arr1).concat(arr2).concat(arr3);
    let randomFlavors = []; 
 
-  let flavor = Math.floor(Math.random() * allArrays.length) - 1;
+   for (let i = 0; i < 31; i++) {
+      let randomNum = Math.floor(Math.random() * allArrays.length) - 1;
 
-    console.log(flavor);
-}
-//    for (let i = 0; i <= 31; i++) {
-//      {
-     
-//      randomFlavors.push(allArrays[(Math.floor(Math.random() * (allArrays.length)) - 1];
+      randomFlavors.push(allArrays[randomNum]);
+   }
+    return randomFlavors;
+  }
 
-//    } return randomFlavors;
-// }
 
 console.log(getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors));
